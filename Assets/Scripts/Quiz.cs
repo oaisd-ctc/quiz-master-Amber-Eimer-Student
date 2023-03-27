@@ -15,6 +15,7 @@ public class Quiz : MonoBehaviour
 
     void Start()
     {
+        GetNextQuestion();
         DisplayQuestion();
     }
     Image buttonImage;
