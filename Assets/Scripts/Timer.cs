@@ -53,6 +53,6 @@ public class Timer : MonoBehaviour
             }
         }
 
-        Debug.Log(isAnsweringQuestion + ": " + timerValue + " = " + fillFraction);
+        //Debug.Log(isAnsweringQuestion + ": " + timerValue + " = " + fillFraction);
     }
 }
