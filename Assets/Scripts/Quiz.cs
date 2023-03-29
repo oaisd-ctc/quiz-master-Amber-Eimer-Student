@@ -67,7 +67,6 @@ public class Quiz : MonoBehaviour
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
-        scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
     }
 
     void DisplayAnswer(int index)
@@ -89,6 +88,7 @@ public class Quiz : MonoBehaviour
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
         }
+        scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
     }
 
     void GetNextQuestion()
